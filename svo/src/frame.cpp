@@ -27,6 +27,8 @@
 
 namespace svo {
 
+using namespace std;
+
 int Frame::frame_counter_ = 0;
 
 Frame::Frame(vk::AbstractCamera* cam, const cv::Mat& img, double timestamp) :

@@ -73,6 +73,7 @@ namespace svo
 {
   using namespace Eigen;
   using namespace Sophus;
+  using namespace std;
 
   const double EPS = 0.0000000001;
   const double PI = 3.14159265;

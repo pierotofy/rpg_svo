@@ -25,6 +25,8 @@
 
 namespace svo {
 
+using namespace std;
+
 /// Monocular Visual Odometry Pipeline as described in the SVO paper.
 class FrameHandlerMono : public FrameHandlerBase
 {
@@ -56,7 +58,7 @@ public:
   /// An external place recognition module may know where to relocalize.
   bool relocalizeFrameAtPose(
       const int keyframe_id,
-      const SE3& T_kf_f,
+      const SE3d& T_kf_f,
       const cv::Mat& img,
       const double timestamp);
 
@@ -84,7 +86,7 @@ protected:
 
   /// Try relocalizing the frame at relative position to provided keyframe.
   virtual UpdateResult relocalizeFrame(
-      const SE3& T_cur_ref,
+      const SE3d& T_cur_ref,
       FramePtr ref_keyframe);
 
   /// Reset the frame handler. Implement in derived class.

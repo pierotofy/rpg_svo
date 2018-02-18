@@ -5,7 +5,7 @@ SET(TRACE TRUE)
 SET(HAVE_G2O FALSE) 
 SET(USE_ROS TRUE) # Set FALSE if you want to build this package without Catkin
 SET(DEBUG_OUTPUT FALSE) # Only relevant if build without ROS
-
+add_compile_options(-std=c++11 -w)
 ################################################################################
 
 SET(PROJECT_NAME svo)

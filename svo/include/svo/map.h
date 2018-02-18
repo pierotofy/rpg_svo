@@ -24,6 +24,8 @@
 
 namespace svo {
 
+using namespace std;
+
 class Point;
 class Feature;
 class Seed;
